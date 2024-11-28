@@ -7,4 +7,10 @@ Homepage - {{ block.super }}
 {% block content %}
 <p>Hello again!</p>
 {% include 'snippets/welcome-use-msg.html' %}
+
+<p>Page Visits: {{ page_visit_count }} |
+    Total Page Visits: {{total_visit_count}} | Percentage : {{percent}}%
+</p>
+<p>---------</p>
+<p>Path: {{path_all}}</p>
 {% endblock %}
